@@ -9,16 +9,13 @@ import us.feras.mdv.MarkdownView
 
 class Falnatsheh: Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val root = inflater.inflate(R.layout.falnatsheh, container, false)
+        val root = inflater.inflate(R.layout.falnatsheh_fragment, container, false)
 
-        val markdownView = root.findViewById<MarkdownView>(R.id.markdownView)
-        markdownView.loadMarkdownFile("https://drive.google.com/open?id=109qFCHKiwCGllzqiuTrmHLbHOPuFZT8M")
+        val markdownView = root.findViewById<MarkdownView>(R.id.markdown_view)
+//        markdownView.loadMarkdownFile("file:///android_asset/anithink.md")
+        markdownView.loadMarkdownFile("https://raw.githubusercontent.com/HoncharukOleksandr/markdown/master/README.md")
 
         return root
     }

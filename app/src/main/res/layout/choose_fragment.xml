@@ -18,17 +18,24 @@
         android:text="@string/mukeshsolanki" />
 
     <Button
-        android:id="@+id/mittsuu"
+        android:id="@+id/grenderG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/mittsuu" />
+        android:text="@string/grenderG" />
 
     <Button
-        android:id="@+id/Gunio"
+        android:id="@+id/tiagohm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/gunio" />
+        android:text="@string/tiagohm" />
+
+    <Button
+        android:id="@+id/mittsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/mittsu" />
 
 </LinearLayout>

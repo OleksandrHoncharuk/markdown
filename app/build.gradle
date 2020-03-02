@@ -6,7 +6,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion '29.0.2'
     defaultConfig {
         applicationId "com.example.markdown"
         minSdkVersion 23
@@ -32,12 +32,21 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
 
 // https://mvnrepository.com/artifact/us.feras.mdv/markdownview
-    compile group: 'us.feras.mdv', name: 'markdownview', version: '1.1.0'
+    implementation group: 'us.feras.mdv', name: 'markdownview', version: '1.1.0'
 
 // https://mvnrepository.com/artifact/com.mukesh/markdownview
-    compile group: 'com.mukesh', name: 'markdownview', version: '1.0.0'
+    implementation group: 'com.mukesh', name: 'markdownview', version: '1.0.0'
 
-    implementation'com.mittsu:markedview:1.0.7@aar'
+    implementation 'com.github.tiagohm.MarkdownView:library:0.19.0'
+    implementation 'com.github.tiagohm.MarkdownView:emoji:0.19.0'
+
+    implementation 'com.github.GrenderG:MarkdownView:0.1.2'
+
+    // https://mvnrepository.com/artifact/com.mittsu/markedview
+    implementation group: 'com.mittsu', name: 'markedview', version: '1.0.7'
 }

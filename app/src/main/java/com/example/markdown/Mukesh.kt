@@ -9,15 +9,13 @@ import com.mukesh.MarkdownView
 
 class Mukesh: Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val root = inflater.inflate(R.layout.mukesh_fragment, container, false)
+        val markdown = root.findViewById<MarkdownView>(R.id.markdown_view)
 
-        root.findViewById<MarkdownView>(R.id.markdown_view).loadUrl("https://drive.google.com/open?id=109qFCHKiwCGllzqiuTrmHLbHOPuFZT8M")
+        markdown.loadMarkdownFromAssets("anithink.md")
+
         return root
     }
 }
